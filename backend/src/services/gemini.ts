@@ -17,6 +17,9 @@ export async function callGemini(messages: AIMessage[], maxTokens: number): Prom
 
   const userMessage = messages[messages.length - 1].content;
   const result = await chat.sendMessage(userMessage);
+  console.log(result);
   const response = await result.response;
+  console.log(response);
   return response.text();
+  
 } 

@@ -15,6 +15,7 @@ router.post('/', async (req, res) => {
             },
         ];
         const output = await (0, gemini_1.callGemini)(messages, 8000);
+        console.log(output);
         const response = {
             response: output,
         };
