@@ -25,6 +25,7 @@ import { motion } from 'framer-motion';
 import { WebContainer } from '@webcontainer/api';
 import { downloadProjectAsZip } from '../utils/fileDownloader';
 import { useAppContext } from '../context/AppContext';
+import logo from '../assets/boltyy.png';
 
 // Defining the step status type explicitly
 type StepStatus = 'pending' | 'in-progress' | 'completed';
@@ -351,8 +352,8 @@ export function Builder() {
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
             <img 
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMgMkwzIDEzTDEyIDEzTDExIDIyTDIxIDExTDEyIDExTDEzIDJaIiBzdHJva2U9IiM2MEE1RkEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPg==" 
-              alt="Bolt Logo" 
+              src={logo}
+              alt="Boltyy Logo" 
               className="w-6 h-6 relative z-10" 
             />
             <h1 className="text-xl font-semibold text-white">Boltyy</h1>
