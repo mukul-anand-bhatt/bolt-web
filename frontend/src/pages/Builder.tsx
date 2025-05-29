@@ -355,7 +355,7 @@ export function Builder() {
               alt="Bolt Logo" 
               className="w-6 h-6 relative z-10" 
             />
-            <h1 className="text-xl font-semibold text-white">Bolt</h1>
+            <h1 className="text-xl font-semibold text-white">Boltyy</h1>
             </button>
           <div className="h-6 mx-4 border-r border-gray-700"></div>
           <h2 className="text-gray-300 hidden sm:block">Website Builder</h2>
